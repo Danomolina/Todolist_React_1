@@ -32,7 +32,7 @@ const TodoList = () => {
           tasks.map((task, index) => (
             <li key={index} onMouseEnter={() => showDeleteIcon(index)} onMouseLeave={() => hideDeleteIcon(index)}>
               {task}
-              <span className="delete-icon" onClick={() => removeTask(index)}>x</span>
+              <span className="delete-icon" onClick={() => removeTask(index)}><i className="fas fa-times"></i></span>
             </li>
           ))
         )}
